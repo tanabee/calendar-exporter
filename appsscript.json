@@ -1,0 +1,31 @@
+{
+  "timeZone": "Asia/Tokyo",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/calendar.addons.execute",
+    "https://www.googleapis.com/auth/calendar.readonly",
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/script.locale"
+  ],
+  "runtimeVersion": "V8",
+  "addOns": {
+    "common": {
+      "name": "Calendar Exporter",
+      "logoUrl": "https://icon-icons.com/icons2/2248/PNG/48/calendar_export_icon_136843.png",
+      "useLocaleFromApp": true,
+      "universalActions": [
+        {
+          "label": "Docs",
+          "openLink": "https://tanabee.github.io"
+        }
+      ]
+    },
+    "calendar": {
+      "homepageTrigger": {
+        "runFunction": "onHomepage",
+        "enabled": true
+      }
+    }
+  }
+}
